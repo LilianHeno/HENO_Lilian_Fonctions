@@ -1,0 +1,11 @@
+fn pgcd(a: i32, b: i32) -> i32 {
+    let mut a = a;
+    let mut b = b;
+    let mut t;
+    while b != 0 {
+        t = b;
+        b = a % b;
+        a = t;
+    }
+    return a;
+}
