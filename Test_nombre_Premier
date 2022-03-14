@@ -1,0 +1,10 @@
+fn test_nb_premier(n: i32) {
+    let mut i = 2;
+    while i < n && n % i != 0 {
+        i = i + 1;
+        if i == n {
+            return println!("{} est premier", n);
+        }
+    }
+    return println!("{} n'est pas premier", n);
+}
